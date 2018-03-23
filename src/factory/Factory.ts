@@ -10,7 +10,7 @@ module factory {
 	}
 	export class Factory {
 
-		public static getResult(a: number, b: number, syb: number) {
+		public static getResult(syb: number) {
 			let op: BasicOperate;
 			switch (syb) {
 				case Symbols.加:
