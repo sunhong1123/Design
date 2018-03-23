@@ -26,9 +26,7 @@ module factory {
 					op = new operateDivide();
 					break;
 			}
-			op.numberA = a;
-			op.numberB = b;
-			console.log(`计算结果为${op.getResult()}`);
+			return op;
 		}
 
 	}

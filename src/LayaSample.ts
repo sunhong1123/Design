@@ -9,7 +9,10 @@ class GameMain {
         //简单工厂测试
         window[`factorys`] = (a, b, syb) => {
             try {
-                factory.Factory.getResult(a, b, syb);
+                let op = factory.Factory.getResult(a, b, syb);
+                op.numberA = a;
+                op.numberB = b;
+                console.log(`计算结果为${op.getResult()}`);
             } catch (error) {
                 console.log(error);
             }
